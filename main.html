@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- 🎥 Background Video -->
+  <video autoplay muted loop id="bgVideo">
+    <source src="#" type="video/mp4">
+    Your browser does not support background video.
+  </video>
+  <div id="startOverlay">
+    <button id="startBtn">Start</button>
+  </div>
+  <!-- 🔊 Background Music -->
+  <audio id="bgMusic" autoplay loop>
+    <source src="asset/Chill Lofi Hip Hop_ 3-Minute Bliss for Relaxation & Focus.mp3" type="audio/mpeg">
+    Your browser does not support background music.
+  </audio>
+
+  <div class="container">
+    <h1>Image Gallery</h1>
+    <input type="file" id="uploadInput" accept="image/*,video/mp4" multiple />
+    <button id="uploadBtn">Upload</button>
+    <div class="gallery" id="gallery"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
